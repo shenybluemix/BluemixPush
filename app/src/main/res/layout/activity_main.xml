@@ -1,0 +1,68 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView android:text="@string/hello_world" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="0.26" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logView"
+            android:layout_weight="0.50"
+            android:text="Logs:" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="1"
+            android:layout_weight="0.14">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:id="@+id/create_document"
+                android:nestedScrollingEnabled="false"
+                android:onClick="createDocument" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READ"
+                android:id="@+id/read_document"
+                android:layout_weight="0.08"
+                android:onClick="readDocument" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PULL"
+                android:id="@+id/pull_document"
+                android:layout_weight="0.08"
+                android:onClick="pullDocument"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUSH"
+                android:id="@+id/replicate_document"
+                android:layout_weight="0.08"
+                android:onClick="pushDocument" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
