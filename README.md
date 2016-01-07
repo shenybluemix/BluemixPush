@@ -1,5 +1,9 @@
 # BluemixPush
 
-Native Android App leveraging Bluemix Push Notification Services
+This is a native Adnroid App leveraing two Bluemix features: 
+ - MobileFirst Push Notification Services
+ - Cloudant No SQL DB Mobile Extension - offline storage and sync 
+ 
+* update the "bluemixpush.properties" information according to your own bluemix services 
 
-sheny@us.ibm.com
+Any questions, contact sheny@us.ibm.com
